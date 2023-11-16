@@ -60,13 +60,122 @@ Now we look at the relationship of several columns at the same time, and we can 
 | Red    | 0.508872 | 0.478585 | 0.469534 | 0.500821 | 0.515021 |  0.453731 |    0.488608 |  0.459082 | 0.450475 |    0.496    | 0.494624 | 0.466599 | 0.443709 |  0.537129 |       0.560538 | 0.432056 | 0.477314 | 0.472537 | 0.426829 | 0.488   | 0.457912 |
 
 We find that no matter which champion players use, playing on the blue side has a higher winning rate than on the red side. This phenomenon is interesting and it makes sense since the blue side pick champions first so that they can lock down the most OP champions earlier than the red side.
+
 ---
 
 ## Assessment of Missingness
 
 ### Analysis of Hextechs Dependency on League
 
-An investigation into the missingness of the 'hextechs' data revealed its dependency on the league. The permutation test yielded a significant p-value.
+An investigation into the missingness of the 'hextechs' data revealed its dependency on the league. Here is the observed distribution when "hextechs" is missing:
+
+|            |     league |
+|:-----------|-----------:|
+| LCKC       | 0          |
+| LPL        | 0.4219     |
+| NLC        | 0          |
+| LVP SL     | 0          |
+| PGC        | 0          |
+| UL         | 0          |
+| PRM        | 0          |
+| LCK        | 0          |
+| LFL        | 0          |
+| LEC        | 0.0225443  |
+| LCS        | 0.00107354 |
+| LFL2       | 0          |
+| GLL        | 0          |
+| HM         | 0          |
+| ESLOL      | 0          |
+| EBL        | 0          |
+| LPLOL      | 0          |
+| PGN        | 0          |
+| LCSA       | 0          |
+| DDH        | 0          |
+| TAL        | 0          |
+| TCL        | 0          |
+| CBLOL      | 0          |
+| LCO        | 0          |
+| LHE        | 0          |
+| GL         | 0          |
+| EL         | 0          |
+| CBLOLA     | 0          |
+| LMF        | 0          |
+| VL         | 0          |
+| SL (LATAM) | 0          |
+| LLA        | 0          |
+| HC         | 0          |
+| LDL        | 0.505636   |
+| LJL        | 0          |
+| PCS        | 0          |
+| VCS        | 0          |
+| UPL        | 0          |
+| LCL        | 0          |
+| NEXO       | 0          |
+| EUM        | 0          |
+| LAS        | 0          |
+| MSI        | 0          |
+| LJLA       | 0          |
+| CT         | 0          |
+| WLDs       | 0.00751476 |
+| CDF        | 0          |
+| IC         | 0          |
+| DCup       | 0.0413312  |
+
+Here is the observed distribution when "hextechs" is not missing:
+
+|            |     league |
+|:-----------|-----------:|
+| LCKC       | 0.0372155  |
+| LPL        | 0          |
+| NLC        | 0.0361764  |
+| LVP SL     | 0.0231416  |
+| PGC        | 0.053084   |
+| UL         | 0.0262586  |
+| PRM        | 0.0346652  |
+| LCK        | 0.0441107  |
+| LFL        | 0.0233305  |
+| LEC        | 0.0189855  |
+| LCS        | 0.0287145  |
+| LFL2       | 0.0227638  |
+| GLL        | 0.0191745  |
+| HM         | 0.0144517  |
+| ESLOL      | 0.0228582  |
+| EBL        | 0.0174743  |
+| LPLOL      | 0.0197412  |
+| PGN        | 0.0140739  |
+| LCSA       | 0.051006   |
+| DDH        | 0.0197412  |
+| TAL        | 0.0193634  |
+| TCL        | 0.0208747  |
+| CBLOL      | 0.0229527  |
+| LCO        | 0.0200246  |
+| LHE        | 0.0229527  |
+| GL         | 0.0164353  |
+| EL         | 0.0127515  |
+| CBLOLA     | 0.0204024  |
+| LMF        | 0.0301313  |
+| VL         | 0.0160574  |
+| SL (LATAM) | 0.0155852  |
+| LLA        | 0.0176632  |
+| HC         | 0.0153018  |
+| LDL        | 0          |
+| LJL        | 0.0202135  |
+| PCS        | 0.0255974  |
+| VCS        | 0.0305091  |
+| UPL        | 0.0389157  |
+| LCL        | 0.00151129 |
+| NEXO       | 0.0182299  |
+| EUM        | 0.0252196  |
+| LAS        | 0.0214414  |
+| MSI        | 0.00755644 |
+| LJLA       | 0.00358931 |
+| CT         | 0.00245584 |
+| WLDs       | 0.0133182  |
+| CDF        | 0.00689525 |
+| IC         | 0.00708416 |
+| DCup       | 0          |
+
+The permutation test yielded a significant p-value of 0.0
 
 #### Empirical Distribution Plot for Hextechs Dependency on League
 
@@ -74,7 +183,21 @@ An investigation into the missingness of the 'hextechs' data revealed its depend
 
 ### Analysis of Hextechs Dependency on participantid
 
-An investigation into the missingness of the 'hextechs' data revealed its dependency on participantid. The permutation test yielded a insignificant p-value.
+An investigation into the missingness of the 'hextechs' data revealed its dependency on participantid. Here is the distribution of participantid when 'hextechs' is missing:
+
+|     |   participantid |
+|----:|----------------:|
+| 100 |             0.5 |
+| 200 |             0.5 |
+
+Here is the distribution of participantid when 'hextechs' is not missing:
+
+|     |   participantid |
+|----:|----------------:|
+| 100 |             0.5 |
+| 200 |             0.5 |
+
+The permutation test yielded a insignificant p-value of 1.0
 
 #### Empirical Distribution Plot for Hextechs Dependency on participantid
 

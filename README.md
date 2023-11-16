@@ -69,7 +69,7 @@ We find that no matter which champion players use, playing on the blue side has 
 
 An investigation into the missingness of the 'hextechs' data revealed its dependency on the league. Here is the observed distribution when "hextechs" is missing:
 
-|            |     league |
+|league      |    hextechs|
 |:-----------|-----------:|
 | LCKC       | 0          |
 | LPL        | 0.4219     |
@@ -123,7 +123,7 @@ An investigation into the missingness of the 'hextechs' data revealed its depend
 
 Here is the observed distribution when "hextechs" is not missing:
 
-|            |     league |
+|league      |    hextechs|
 |:-----------|-----------:|
 | LCKC       | 0.0372155  |
 | LPL        | 0          |
@@ -185,17 +185,17 @@ The permutation test yielded a significant p-value of 0.0
 
 An investigation into the missingness of the 'hextechs' data revealed its dependency on participantid. Here is the distribution of participantid when 'hextechs' is missing:
 
-|     |   participantid |
-|----:|----------------:|
-| 100 |             0.5 |
-| 200 |             0.5 |
+|participantid     |         hextechs|
+|-----------------:|----------------:|
+| 100              |             0.5 |
+| 200              |             0.5 |
 
 Here is the distribution of participantid when 'hextechs' is not missing:
 
-|     |   participantid |
-|----:|----------------:|
-| 100 |             0.5 |
-| 200 |             0.5 |
+|participantid     |         hextechs|
+|-----------------:|----------------:|
+| 100              |             0.5 |
+| 200              |             0.5 |
 
 The permutation test yielded a insignificant p-value of 1.0
 

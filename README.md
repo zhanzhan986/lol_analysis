@@ -12,7 +12,15 @@ In this DSC80 project, I analyze a dataset of League of Legends esports matches 
 
 ## Cleaning and EDA
 
-The dataset initially contained numerous rows and columns. Relevant columns were selected for a focused analysis of Azir's performance. Data completeness was verified, and player-based data were separated from team-based data for more precise analysis.
+The dataset initially contained numerous rows and columns. Relevant columns were selected for a focused analysis of Azir's performance. Data completeness was verified, and player-based data were separated from team-based data for more precise analysis. Here's the header after data cleaning:
+
+| gameid                | datacompleteness   | league   | side   |   participantid | position   | champion   |   result |   kills |   deaths |   assists |   damagetochampions |   damageshare |   hextechs |   earnedgold |   golddiffat10 |   xpdiffat10 |
+|:----------------------|:-------------------|:---------|:-------|----------------:|:-----------|:-----------|---------:|--------:|---------:|----------:|--------------------:|--------------:|-----------:|-------------:|---------------:|-------------:|
+| ESPORTSTMNT01_2690210 | True               | LCKC     | Blue   |               1 | top        | Renekton   |        0 |       2 |        3 |         2 |               15768 |     0.278784  |        nan |         7164 |             52 |          -44 |
+| ESPORTSTMNT01_2690210 | True               | LCKC     | Blue   |               2 | jng        | Xin Zhao   |        0 |       2 |        5 |         6 |               11765 |     0.208009  |        nan |         5368 |            485 |          432 |
+| ESPORTSTMNT01_2690210 | True               | LCKC     | Blue   |               3 | mid        | LeBlanc    |        0 |       2 |        2 |         3 |               14258 |     0.252086  |        nan |         5945 |            162 |           71 |
+| ESPORTSTMNT01_2690210 | True               | LCKC     | Blue   |               4 | bot        | Samira     |        0 |       2 |        4 |         2 |               11106 |     0.196358  |        nan |         6835 |            296 |          265 |
+| ESPORTSTMNT01_2690210 | True               | LCKC     | Blue   |               5 | sup        | Leona      |        0 |       1 |        5 |         6 |                3663 |     0.0647631 |        nan |         2908 |            528 |         -587 |
 
 ### Univariate Analysis
 

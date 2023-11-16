@@ -54,6 +54,14 @@ An investigation into the missingness of the 'hextechs' data revealed its depend
 
 <iframe src="assets/hextechs_league_dependency.html" width=800 height=600 frameBorder=0></iframe>
 
+### Analysis of Hextechs Dependency on participantid
+
+An investigation into the missingness of the 'hextechs' data revealed its dependency on participantid. The permutation test yielded a insignificant p-value.
+
+#### Empirical Distribution Plot for Hextechs Dependency on participantid
+
+<iframe src="assets/hextechs_participantid_dependency.html" width=800 height=600 frameBorder=0></iframe>
+
 ---
 
 ## Hypothesis Testing

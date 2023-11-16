@@ -6,9 +6,13 @@ by Steven Jiang
 
 ## Introduction
 
+<<<<<<< HEAD
 This is a project in DSC80. In this project, I clean and perform exploratory data analysis, assess missingness, and conduct permutation tests. This website stands as a report of the findings.
 
 
+=======
+In this project, we studied the effectiveness of spice challenges in building team morale.
+>>>>>>> 33237b1fbeb7a7e4aa08237ef53183c597885035
 
 ---
 

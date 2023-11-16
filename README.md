@@ -50,6 +50,17 @@ Focusing on mid lane champions, this plot shows the average damage share for eac
 
 <iframe src="assets/avg_damage_share_mid_champions.html" width=800 height=600 frameBorder=0></iframe>
 
+### Pivot table
+
+Now we look at the relationship of several columns at the same time, and we can find interesting relationships among side, champion, and win rate:
+
+|     Ahri |    Akali |     Azir |    Corki |    Galio |   LeBlanc |   Lissandra |   Orianna |     Ryze |   Seraphine |    Swain |    Sylas |   Syndra |   Taliyah |   Twisted Fate |   Veigar |      Vex |   Viktor |    Yasuo |    Yone |      Zoe |
+|---------:|---------:|---------:|---------:|---------:|----------:|------------:|----------:|---------:|------------:|---------:|---------:|---------:|----------:|---------------:|---------:|---------:|---------:|---------:|--------:|---------:|
+| 0.551837 | 0.540486 | 0.527806 | 0.52451  | 0.483271 |  0.496528 |    0.518414 |  0.509128 | 0.474453 |    0.597561 | 0.58871  | 0.562716 | 0.512019 |  0.555556 |       0.552901 | 0.497872 | 0.507692 | 0.507692 | 0.506024 | 0.46789 | 0.553633 |
+| 0.508872 | 0.478585 | 0.469534 | 0.500821 | 0.515021 |  0.453731 |    0.488608 |  0.459082 | 0.450475 |    0.496    | 0.494624 | 0.466599 | 0.443709 |  0.537129 |       0.560538 | 0.432056 | 0.477314 | 0.472537 | 0.426829 | 0.488   | 0.457912 |
+
+We find that no matter which champion players use, playing on the blue side has a higher winning rate than on the red side. This phenomenon is interesting and is usually explained that blue side picks champion first.
+
 ---
 
 ## Assessment of Missingness

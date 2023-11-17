@@ -6,7 +6,7 @@ by Steven Jiang
 
 ## Introduction
 
-In this DSC80 project, I analyze a dataset of League of Legends esports matches to explore the performance of various champions, with a focus on Azir in the mid lane. The project includes cleaning and exploratory data analysis, assessment of missingness, and hypothesis testing.
+Faker is a famour player in professional League of Legend matches, and each time Faker uses champion Azir, he carries the game pretty well. In this DSC80 project, I analyze a dataset of League of Legends esports matches to explore the performance of various champions, with a focus on Azir in the mid lane. The project includes cleaning and exploratory data analysis, assessment of missingness, and hypothesis testing.
 
 ---
 

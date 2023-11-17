@@ -271,9 +271,13 @@ Here is a table showing the average win rate and game count of each popular mid-
 | Zoe          |           0.505119 |          586 |
 
 Null Hypothesis: Azir's winrate is the same with other mid lane champions with a pick rate above 1%
+
 Alternative Hypothesis: Azir's winrate is higher than other mid lane champions with a pick rate above 1%
+
 Significance Level: 5%
+
 Test Stats: average win rate
+
 The observed value is 0.5010952902519168
 
 I simulated 10000 samples and this plot shows the distribution of sample win rates compared to Azir's observed win rate.

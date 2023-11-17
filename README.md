@@ -216,6 +216,7 @@ Among players, missingness of `hextechs` does depend on `league`.
 ### Analysis of Hextechs Dependency on participantid
 
 Also, for `team_data`, I investigate into the missingness of the `hextechs` data  and reveal its dependency on the `participantid`. Here is the observed distribution when `hextechs` is missing:
+
 |participantid     |         hextechs|
 |-----------------:|----------------:|
 | 100              |             0.5 |
